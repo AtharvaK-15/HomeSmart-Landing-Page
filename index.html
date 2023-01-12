@@ -4,9 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>HomeSmart</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <h1>A Tailwind CSS landing Page</h1>
+<body class="max-w-[2000px] 
+   mx-auto
+ text-neutral-900 
+ dark:text-neutral-200 
+ bg-white 
+ dark:bg-neutral-800" >
+    <nav class="mx-auto p-4 bg-amber-400">
+        <!-- container in tailwind only sets the width of things while in other frameworks center things. -->
+        <div class="container
+        mx-auto
+        flex
+        items-center
+        justify-between">
+
+        <a href="/" aria-label="Go to home-page">
+            <img src="./assets/logo.svg" alt="HomeSmart Logo" width="200">
+        </a>
+
+        </div>
+
+    </nav>
+   
+    <script src="app.js"></script>
 </body>
 </html>
