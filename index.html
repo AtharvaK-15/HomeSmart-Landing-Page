@@ -48,7 +48,7 @@
         ring-offset-amber-400
         text-neutral-900
         hover:text-neutral-100
-        transition-colors">
+        transition-colors" aria-expanded="false" aria-label="Open Menu">
             <svg xmlns="http://www.w3.org/2000/svg" 
             fill="none" viewBox="0 0 24 24" 
             stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
@@ -56,7 +56,7 @@
               </svg>              
         </button>
         <div role="menubar" class="
-        flex
+        hidden
         flex-col
         gap-4
         absolute
@@ -68,18 +68,115 @@
         text-center
         p-6
         text-lg
+        items-center
+        lg:flex
+        lg:flex-row
+        lg:static
+        lg:shadow-none
+        lg:justify-between
+        lg:w-full
         ">
-            <a role="menuitem" class="text-black" href="/">Home</a>
-            <a role="menuitem" class="text-black" href="/">Home</a>
-            <a role="menuitem" class="text-black" href="/">Home</a>
-            <a role="menuitem" class="text-black" href="/">Home</a>
+            <a role="menuitem" class="
+            py-1
+            px-6
+            dark:text-neutral-900
+            focus:outline-none
+            focus-visible:ring-4
+            ring-neutral-900
+            rounded-sm
+            ring-offset-4
+            ring-offset-amber-400
+            hover:text-neutral-100
+            transition-colors"
+             href="/">Home</a>
+             <a role="menuitem" class="
+            py-1
+            px-6
+            dark:text-neutral-900
+            focus:outline-none
+            focus-visible:ring-4
+            ring-neutral-900
+            rounded-sm
+            ring-offset-4
+            ring-offset-amber-400
+            hover:text-neutral-100
+            transition-colors
+            lg:mr-auto"
+             href="/">Contact</a>
+             <a role="menuitem" class="
+            py-1
+            px-6
+            dark:text-neutral-900
+            focus:outline-none
+            focus-visible:ring-4
+            ring-neutral-900
+            rounded-sm
+            ring-offset-4
+            ring-offset-amber-400
+            hover:text-neutral-100
+            transition-colors"
+             href="/">Login</a>
+             <a role="menuitem" class="
+            py-2
+            px-6
+            bg-teal-900
+            text-white
+            shadow-xl
+            hover:shadow-none
+            transition-shadow
+            focus:outline-none
+            focus-visible:ring-4
+            ring-neutral-900
+            rounded-md
+            ring-offset-4
+            ring-offset-amber-400"
+             href="/">Sign Up</a>
 
-
-        </div>
-        </div>
-          
+        </div> 
+     </div>      
     </nav>
-   
+   <header class="relative pt-16 md:pt-24 lg:pt-48">
+    <div class="
+    absolute
+    inset-0
+    bottom-8
+    md:bottom-24
+    xl:bottom-32
+    -z-10
+    bg-gradient-to-b
+    from-amber-400
+    to-amber-700
+    ">
+
+    </div>
+    <div class="container 
+    mx-auto
+    grid
+    grid-rows-1
+    place-items-end
+    px-2
+    ">
+        <img src="./assets/couch.png" class="
+        row-start-1
+        row-end-2
+        col-start-1
+        col-end-2
+        mx-auto
+        " alt="Couch" >
+        <img src="./assets/app.svg" class="
+        row-start-1
+        row-end-2
+        col-start-1
+        col-end-2
+        mx-auto
+        w-40
+        sm:w-52
+        md:w-64
+        lg:w-72
+        " alt="App" >
+    </div>
+   </header>
+
     <script src="app.js"></script>
 </body>
 </html>
